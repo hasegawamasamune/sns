@@ -48,5 +48,4 @@ Route::post('posts', 'PostsController@store');
 // update
 Route::get('post/{id}/update-form', 'PostsController@updateForm');
 Route::post('post/update', 'PostsController@update');
-
-ROute::get('post/{id}/delete', 'PostsController@delete');
+Route::get('post/{id}/delete', 'PostsController@delete');

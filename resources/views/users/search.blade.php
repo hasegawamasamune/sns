@@ -15,7 +15,10 @@
               </td>
               <!-- 投稿詳細 -->
               <td class="table-text">
+                <!-- コントローラーから引っ張ってきて、カラムの指定をする -->
                 <div>{{ $user->username }}</div>
+                <button type="submit" class="btn btn-danger">フォロー解除</button>
+                <button type="submit" class="btn btn-primary">フォローする</button>
               </td>
           </tr>
           @endforeach

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -32,6 +32,15 @@ class User extends Authenticatable
 
     // postsテーブルとのリレーション（主テーブル側）
     public function posts() { //1対多の「多」側なので複数形
-        return $this->hasMany('App\Post');
+        return $this->hasMany('App\Models\Post');
+    }
+    // フォローリレーション
+    public function followers()
+    {
+        return $this->belongsToMany(self::class,'follows','followed_id','following_id');
+    }
+    public function follows()
+    {
+        return $this->belongsToMany(self::class,'follows','following_id','followed_id');
     }
 }
