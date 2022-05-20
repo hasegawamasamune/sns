@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 //一対多
 use App\Models\Post;
-use App\Models\User;
+use App\User;
 use Auth;
 use Validator;
 
