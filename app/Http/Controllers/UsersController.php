@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use App\Models\Post;
-use App\Models\Follow;
+use App\Post;
+use App\Follow;
 
 class UsersController extends Controller
 {
