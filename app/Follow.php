@@ -1,6 +1,6 @@
 <?php
 // useで他ファイルから指名するときの名前になる
-namespace App\Models;
+namespace App;
 // 使いたいファイルのネームスペースを指名して使う
 use Illuminate\Database\Eloquent\Model;
 // 上記のmodelを継承してクラスをつくる
