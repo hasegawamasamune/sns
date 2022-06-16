@@ -74,4 +74,5 @@ if ($validator->fails()) {
 
         return redirect('top');
     }
+    // 検索機能
 }

@@ -56,8 +56,8 @@ Route::get('post/{id}/delete', 'PostsController@delete');
 
 // ResourceControllerにすることでシステムが自動的にそれぞれのアクションに紐づけてくれます。
 Route::resource('users', 'UsersController');
-    // フォロー/フォロー解除を追加
      // フォロー/フォロー解除を追加
-    Route::post('users/{user}/follow', 'UsersController@follow')->name('follow');
-    Route::delete('users/{user}/unfollow', 'UsersController@unfollow')->name('unfollow');
+    Route::post('users/{id}/follow', 'UsersController@follow')->name('follow');
+    Route::delete('users/{id}/unfollow', 'UsersController@unfollow')->name('unfollow');
 });
+// 検索機能
